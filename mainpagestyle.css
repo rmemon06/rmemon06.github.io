@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    min-height: 100vh; 
+    background-color: rgba(200, 200, 200, 0.5);
+    color: white; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  
+}
+header{
+    background-color: white;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    text-align: center;
+    
+    background-color:rgba(0, 0, 0, 0.5) ;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 1) ;
+    width: 100%;
+ 
+}
+
+#steam{
+    width: 800px;
+    opacity: 0.1;
+
+    position: absolute;
+    right: 62%;
+}
+
+p{
+    margin-top: 100px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    background-color: rgba(128, 128, 128, 0.5);
+    box-shadow: 0.1px 0.1px 15px rgba(0, 0, 0, 0.5);
+
+}
+header *{
+display: flexbox;
+    padding: 10px;
+    
+}
+
+#logo{
+    margin-left: -20px;
+    margin-top: -45px;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+    drop-shadow(-1px -2px 0 black);
+    filter: drop-shadow(1px 1px 1 black) 
+            drop-shadow(-1px -1px 0 black);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+
+a{
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 20px;
+    text-shadow: -2px -2.2px 0px black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a::after{
+    color: white;
+    
+}
+a:visited{
+    color:white;
+}
+a:active{
+    color: darkslategray;
+}
+
+a:hover{
+    color: darkgray;
+}
